@@ -117,3 +117,4 @@ def test_output_schema_integrity():
     ).issubset(
         allowed_classes
     )
+
