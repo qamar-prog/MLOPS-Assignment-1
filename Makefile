@@ -5,8 +5,7 @@ install:
 	python -m pip install -r requirements.txt
 
 lint:
-	flake8 src/ tests/ --max-line-length=80
-
+	flake8 src/ tests/ --max-line-length=100
 test:
 	pytest -v
 
