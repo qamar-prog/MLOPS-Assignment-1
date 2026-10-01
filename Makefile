@@ -1,4 +1,4 @@
-.PHONY: install lint test train clean
+.PHONY: install lint test train evaluate clean
 
 install:
 	python -m pip install --upgrade pip
@@ -13,9 +13,13 @@ test:
 train:
 	python -m src.train
 
+evaluate:
+	python -m src.evaluate
+
 clean:
 	find . -type f -name "*.pyc" -delete
 	find . -type d -name "__pycache__" -delete
 	find . -type d -name ".pytest_cache" -delete
 	find . -type d -name ".flake8_cache" -delete
 	find . -type f -name "*.tmp" -delete
+

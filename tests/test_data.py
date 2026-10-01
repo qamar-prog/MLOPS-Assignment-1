@@ -1,6 +1,6 @@
 import numpy as np
 
-from src.data import load_wine_data, validate_data
+from src.data import load_wine_data
 
 
 def test_data_shapes():
