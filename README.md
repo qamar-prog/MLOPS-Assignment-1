@@ -30,6 +30,7 @@ wine-mlops-pipeline/
 ├── Makefile
 ├── requirements.txt
 └── README.md
+```
 
 ## Milestones
 
@@ -54,6 +55,7 @@ make install
 make lint
 make test
 make train
+make evaluate
 make clean
 ```
 
